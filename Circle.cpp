@@ -12,7 +12,7 @@ int Circle::getRadius() const {
 }
 // Sets the Radius of the circle
 void Circle::setRadius(const int radius) {
-    Circle::radius = radius;
+    this->radius = radius;
 }
 // Returns the Diameter of the circle
 int Circle::getDiameter() const {
