@@ -9,21 +9,21 @@
 
 class Circle {
 private:
-    double radius;
+    int radius;
 
 
 public:
-    Circle(double radius);
+    Circle(int radius);
 
     // getters
-    double getRadius() const;
-    double getDiameter() const;
+    int getRadius() const;
+    int getDiameter() const;
     double getCircumference() const;
     double getArea() const;
 
 
     // Setters
-    void setRadius(const double radius);
+    void setRadius(const int radius);
 
 
 };

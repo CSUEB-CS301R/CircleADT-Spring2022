@@ -4,19 +4,19 @@
 
 #include "Circle.h"
 
-Circle::Circle(double radius) {
+Circle::Circle(int radius) {
     this->radius = radius;
 }
 
-double Circle::getRadius() const {
+int Circle::getRadius() const {
     return this->radius;
 }
 
-void Circle::setRadius(const double radius) {
+void Circle::setRadius(const int radius) {
     Circle::radius = radius;
 }
 
-double Circle::getDiameter() const {
+int Circle::getDiameter() const {
     double diameter = this->radius * 2;
     return diameter;
 }
