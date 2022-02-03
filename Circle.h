@@ -7,25 +7,41 @@
 #define CIRCLE_H
 
 #include <cmath>
+#include <string>
 
+template<class DataType>
 class Circle {
+
 private:
-    int radius;         // Holds the circle radius
+    DataType radius;         // Holds the circle radius
 
 
 public:
-    Circle(int radius);
+    class NegativeCircleError {
+    public:
+        std::string getMessage() {
+            return "Can't have a negative radius!!!!";
+        }
+    };
+
+    Circle(DataType radius);
 
     // getters
-    int getRadius() const;
-    int getDiameter() const;
+    DataType getRadius() const;
+    DataType getDiameter() const;
     double getCircumference() const;
     double getArea() const;
 
 
     // Setters
-    void setRadius(const int radius);
+    void setRadius(const DataType radius);
 
+
+    // operator overloading
+    bool operator<(Circle<DataType> &rhs) const;
+    bool operator>=(Circle<DataType> &rhs) const;
+
+    Circle<DataType> operator+(Circle<DataType> &rhs) const;
 
 };
 
