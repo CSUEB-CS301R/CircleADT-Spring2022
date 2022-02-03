@@ -1,6 +1,7 @@
-//
-// Created by Paul Raupach on 2/1/22.
-//
+/*
+ * The Circle ADT models a circle allowing the use to get the
+ * Diameter, Circumference and Area of the circle.
+ */
 
 #ifndef CIRCLE_H
 #define CIRCLE_H
@@ -9,7 +10,7 @@
 
 class Circle {
 private:
-    int radius;
+    int radius;         // Holds the circle radius
 
 
 public:
