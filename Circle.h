@@ -5,6 +5,7 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
+#include <cmath>
 
 class Circle {
 private:
@@ -17,6 +18,9 @@ public:
     // getters
     double getRadius() const;
     double getDiameter() const;
+    double getCircumference() const;
+    double getArea() const;
+
 
     // Setters
     void setRadius(const double radius);

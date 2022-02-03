@@ -21,3 +21,11 @@ double Circle::getDiameter() const {
     return diameter;
 }
 
+double Circle::getCircumference() const {
+    return 2 * M_PI * radius ;
+}
+
+double Circle::getArea() const {
+    return M_PI * radius * radius;
+}
+
